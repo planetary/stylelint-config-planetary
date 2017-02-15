@@ -1,0 +1,26 @@
+{
+  "name": "stylelint-config-planetary",
+  "version": "1.0.0",
+  "description": "Planetary's .stylelintrc as an extensible shared config",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/planetary/stylelint-config-planetary.git"
+  },
+  "keywords": [
+    "stylelint",
+    "stylelint config",
+    "config",
+    "planetary",
+    "css"
+  ],
+  "author": "Planetary <team@planetary.io> (https://planetary.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/planetary/stylelint-config-planetary/issues"
+  },
+  "homepage": "https://github.com/planetary/stylelint-config-planetary#readme"
+}
