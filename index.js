@@ -1,4 +1,7 @@
 module.exports = {
+  "plugins": [
+    "stylelint-order"
+  ],
   "rules": {
     "at-rule-empty-line-before": [ "always", {
      except: [
@@ -38,38 +41,10 @@ module.exports = {
         "inside-single-line-block",
       ],
     } ],
-    "custom-property-no-outside-root": true,
     "declaration-bang-space-after": "never",
     "declaration-bang-space-before": "always",
     "declaration-block-no-duplicate-properties": true,
-    "declaration-block-no-ignored-properties": true,
     "declaration-block-no-shorthand-property-overrides": true,
-    "declaration-block-properties-order": [
-      "content",
-      "display",
-      "position",
-      "top",
-      "right",
-      "bottom",
-      "left",
-      "width",
-      "height",
-      "margin",
-      "padding",
-      "z-index",
-      {
-        order: "flexible",
-        properties: [
-          "font",
-          "color",
-          "line-height",
-          "text-decoration",
-          "font-feature-settings",
-          "font-kerning"
-        ],
-        unspecified: "bottom"
-      }
-    ],
     "declaration-block-semicolon-newline-after": "always-multi-line",
     "declaration-block-semicolon-space-after": "always-single-line",
     "declaration-block-semicolon-space-before": "never",
@@ -112,14 +87,12 @@ module.exports = {
     "media-feature-colon-space-before": "never",
     "media-feature-name-case": "lower",
     "media-feature-name-no-vendor-prefix": true,
-    "media-feature-no-missing-punctuation": true,
     "media-feature-parentheses-space-inside": "never",
     "media-feature-range-operator-space-after": "always",
     "media-feature-range-operator-space-before": "always",
     "media-query-list-comma-newline-after": "always-multi-line",
     "media-query-list-comma-space-after": "always-single-line",
     "media-query-list-comma-space-before": "never",
-    "no-browser-hacks": true,
     "no-duplicate-selectors": true,
     "no-empty-source": true,
     "no-eol-whitespace": true,
@@ -130,16 +103,28 @@ module.exports = {
     "number-leading-zero": "always",
     "number-max-precision": 2,
     "number-no-trailing-zeros": true,
+    "order/declaration-block-properties-specified-order": [
+      [
+        "content",
+        "display",
+        "position",
+        "top",
+        "right",
+        "bottom",
+        "left",
+        "width",
+        "height",
+        "margin",
+        "padding",
+        "z-index"
+      ],
+      {
+        unspecified: "bottom"
+      }
+    ],
     "property-case": "lower",
     "property-no-unknown": true,
     "property-no-vendor-prefix": true,
-    "rule-nested-empty-line-before": [ "always-multi-line", {
-       except: ["first-nested"],
-       ignore: ["after-comment"],
-     } ],
-     "rule-non-nested-empty-line-before": [ "always-multi-line", {
-       ignore: ["after-comment"],
-     } ],
     "selector-attribute-brackets-space-inside": "never",
     "selector-attribute-operator-space-after": "never",
     "selector-attribute-operator-space-before": "never",
@@ -157,14 +142,11 @@ module.exports = {
     "selector-pseudo-element-case": "lower",
     "selector-pseudo-element-colon-notation": "double",
     "selector-pseudo-element-no-unknown": true,
-    "selector-root-no-composition": true,
     "selector-type-case": "lower",
     "selector-type-no-unknown": true,
     "shorthand-property-no-redundant-values": true,
     "string-no-newline": true,
     "string-quotes": "single",
-    "stylelint-disable-reason": "always-before",
-    "time-no-imperceptible": true,
     "unit-case": "lower",
     "unit-no-unknown": true,
     "value-keyword-case": "lower",
