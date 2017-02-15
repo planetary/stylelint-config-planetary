@@ -1,4 +1,7 @@
 module.exports = {
+  "plugins": [
+    "stylelint-order"
+  ],
   "rules": {
     "at-rule-empty-line-before": [ "always", {
      except: [
@@ -100,39 +103,28 @@ module.exports = {
     "number-leading-zero": "always",
     "number-max-precision": 2,
     "number-no-trailing-zeros": true,
-    "order/declaration-block-properties-order": [
-      "content",
-      "display",
-      "position",
-      "top",
-      "right",
-      "bottom",
-      "left",
-      "width",
-      "height",
-      "margin",
-      "padding",
-      "z-index",
+    "order/declaration-block-properties-specified-order": [
+      [
+        "content",
+        "display",
+        "position",
+        "top",
+        "right",
+        "bottom",
+        "left",
+        "width",
+        "height",
+        "margin",
+        "padding",
+        "z-index"
+      ],
       {
-        order: "flexible",
-        properties: [
-          "font",
-          "color",
-          "line-height",
-          "text-decoration",
-          "font-feature-settings",
-          "font-kerning"
-        ],
         unspecified: "bottom"
       }
     ],
     "property-case": "lower",
     "property-no-unknown": true,
     "property-no-vendor-prefix": true,
-    "rule-empty-line-before": [ "always-multi-line", {
-       except: ["first-nested"],
-       ignore: ["after-comment"],
-     } ],
     "selector-attribute-brackets-space-inside": "never",
     "selector-attribute-operator-space-after": "never",
     "selector-attribute-operator-space-before": "never",

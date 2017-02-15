@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-planetary",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Planetary's .stylelintrc as an extensible shared config",
   "main": "index.js",
   "scripts": {
@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/planetary/stylelint-config-planetary/issues"
   },
-  "homepage": "https://github.com/planetary/stylelint-config-planetary#readme"
+  "homepage": "https://github.com/planetary/stylelint-config-planetary#readme",
+  "dependencies": {
+    "stylelint-order": "^0.2.2"
+  }
 }
